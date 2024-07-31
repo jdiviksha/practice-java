@@ -54,6 +54,30 @@ public class even{
         }
     }
 }
+### 6. Find the Largest and Smallest Number
+**Problem:**
+Write a Java program that takes 5 integers from the user and finds the largest and smallest numbers among them.
+**Hint:** Use a `for` loop to take 5 inputs and `if` statements to keep track of the largest and smallest numbers.
+import java.util.Scanner;
+public class ls{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int l=Integer.MIN_VALUE;
+        int s=Integer.MAX_VALUE;
+        System.out.println("Enter 5 num:");
+        for (int i=0;i<5;i++){
+            int num=scanner.nextInt();
+            if(num>l){
+                l=num;
+            }
+            if(num<s){
+                s=num;
+            }
+        }
+        System.out.println("Largest num:"+l);
+        System.out.println("Smallest num:"+s);
+    }
+}
 //### 7. Sum of Digits
 //**Problem:**
 //Write a Java program that takes an integer from the user and calculates the sum of its digits.
