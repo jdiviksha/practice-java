@@ -112,6 +112,27 @@ public class even {
         }
     }
 }
+### extra 2. Find the Largest and Smallest Number
+**Problem:**
+Write a Java program that takes  integers from array and finds the largest and smallest numbers among them.
+**Hint:** Use a `for` loop to take array elements and `if` statements to keep track of the largest and smallest numbers.
+public class minmaxarr{
+    public static void main(String[] args){
+        int[] num={3,1,4,1,5,10,2,6,5,3,5};
+            int min=num[0];
+            int max=num[0];
+            for (int i=1;i<num.length;i++){
+                if (num[i]<min){
+                    min=num[i];
+                } 
+                else if(num[i]>max){
+                    max=num[i];
+                }
+            }
+            System.out.println("Minvalue:"+min);
+            System.out.println("Maxvalue:"+max);
+        }
+    }
 
 
 
