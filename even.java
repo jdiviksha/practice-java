@@ -133,6 +133,22 @@ public class minmaxarr{
             System.out.println("Maxvalue:"+max);
         }
     }
+### extra 3. Reverse the Number
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int num=scanner.nextInt();
+        scanner.close();
+        while(num > 0){
+            int rem=num % 10;
+            if (rem>0){
+                System.out.print(rem);
+            }
+            num/=10;
+        }
+    }
+}
 
 
 
