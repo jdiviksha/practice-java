@@ -149,8 +149,16 @@ public class Main{
         }
     }
 }
-
-
+### extra 3. sqrt of the number
+class HelloWorld{
+    public static void main(String[] args){
+        int n=10;
+        for(int i=1;i<=n;i++) {
+            System.out.print(i);
+            System.out.print(i*i);
+        }
+    }
+}
 
 
 
