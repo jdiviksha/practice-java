@@ -203,7 +203,20 @@ public class Main{
         scanner.close();
     }
 }
-
+###extra string reverse
+import java.util.Scanner;
+public class stringRev{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter a string");
+        String originalstring=scanner.nextLine();
+        String reversedstring="";
+        for (int i=originalstring.length()-1;i>=0;i--){
+            reversedstring += originalstring.charAt(i);
+        }
+        System.out.println("reversed string:"+reversedstring);
+    }
+}
 
 
 
