@@ -240,6 +240,24 @@ public class Divisorcount{
         scanner.close();
     }
 }
+###extra inheritance simple prg
+class One{
+    void ones(){
+        System.out.println("This is one,that ones");
+    }
+}
+class Two extends One{
+    void twos(){
+        System.out.println("This is Two,that twos");
+    }
+}
+public class Three{
+    public static void main(String[] args){
+        Two myObject = new Two();
+        myObject.ones();
+        myObject.twos();
+    }
+}
 
 
 
