@@ -258,8 +258,28 @@ public class Three{
         myObject.twos();
     }
 }
-
-
+###extra interface1
+interface A{
+    void methodA();
+}
+interface B{
+    void methodB();
+}
+class C implements A,B{
+    public void methodA(){
+        System.out.println("method A from interface A");
+    }
+    public void methodB(){
+        System.out.println("method B from interface B");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        C obj=new C();
+        obj.methodA();  
+        obj.methodB();  
+    }
+}
 
 
 
