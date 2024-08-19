@@ -280,6 +280,34 @@ public class Main{
         obj.methodB();  
     }
 }
+###hybrid inherit
+interface A{
+    void makeNoise();
+}
+interface B{
+    void makenoise();
+}
+class C implements A,B{
+    public void makeNoise(){
+        System.out.println("C make noise");
+    }
+    public void makenoise(){
+        System.out.println("C make noisee");
+    }
+}
+class D extends C{
+    public void showInfo(){
+        System.out.println("D is type of C");
+    }
+}
+public class hybrid{
+    public static void main(String[] args){
+        D obj=new D();
+        obj.makeNoise();            
+        obj.makenoise();  
+        obj.showInfo();             
+    }
+}
 
 
 
