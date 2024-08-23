@@ -308,7 +308,18 @@ public class hybrid{
         obj.showInfo();             
     }
 }
-
-
+### expense in simple class and function
+public class Expense{
+    String description;
+    double amount;
+    public Expense(String description,double amount){
+        this.description=description;
+        this.amount=amount;
+    }
+    @Override
+    public String toString(){
+        return description + ": $" + amount;
+    }
+}
 
 
