@@ -321,5 +321,42 @@ public class Expense{
         return description + ": $" + amount;
     }
 }
+### abstraction 
+abstract class vehicle{
+    private String name;
+    public vehicle(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
+    }
+    public abstract void display();
+}
+class Car extends vehicle{
+    public Car(String name){
+        super(name);
+    }
+    public void display(){
+        System.out.println(getName() + " is a sedan");
+    }
+}
+class Lorry extends vehicle{
+    public Lorry(String name){
+        super(name);
+    }
+    public void display(){
+        System.out.println(getName() + " is used for metal transformation");
+    }
+}
+public class Abstractionexample{
+    public static void main(String[] args){
+        vehicle car = new Car("Maruti");
+        vehicle lorry = new Lorry("airport lorry");
+        car.display();
+        lorry.display();
+    }
+}
+
+
 
 
